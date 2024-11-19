@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-11-19T10:26:09 IST" name="Default suite" finished-at="2024-11-19T10:26:19 IST" duration-ms="9497">
+    <groups>
+    </groups>
+    <test started-at="2024-11-19T10:26:09 IST" name="Default test" finished-at="2024-11-19T10:26:19 IST" duration-ms="9497">
+      <class name="eauctionFlow.Login">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:eauctionFlow.Login@451001e5]" started-at="2024-11-19T10:26:09 IST" name="setUp" finished-at="2024-11-19T10:26:18 IST" duration-ms="8893" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testLogin()[pri:0, instance:eauctionFlow.Login@451001e5]" started-at="2024-11-19T10:26:18 IST" name="testLogin" finished-at="2024-11-19T10:26:19 IST" duration-ms="543" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+      </class> <!-- eauctionFlow.Login -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

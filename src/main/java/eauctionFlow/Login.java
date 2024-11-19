@@ -4,8 +4,12 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
+
+import com.aventstack.extentreports.Status;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -25,7 +29,7 @@ public class Login {
     }
 
     @Test
-    public void testLogin() {
+    public void testLogin() throws InterruptedException {
         // Locate the username field and input a username
         WebElement usernameField = driver.findElement(By.xpath("//input[@placeholder='User Name ']")); 
         usernameField.sendKeys("akpatil");
@@ -38,10 +42,12 @@ public class Login {
         WebElement loginButton = driver.findElement(By.xpath("/html/body/app-root/app-web-layout/div/div/div/app-login/div[3]/div[2]/form/div[3]/button")); // Update locator as needed
         loginButton.click();
 
-       
-    }
+        Thread.sleep(2000);
 
-   // @AfterClass
+		
+    }
+   
+    @AfterClass
     public void tearDown() {
         // Close the browser
         if (driver != null) {

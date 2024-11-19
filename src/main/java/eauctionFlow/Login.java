@@ -3,9 +3,7 @@ package eauctionFlow ;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.testng.Assert;
-import org.testng.annotations.AfterClass;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -18,22 +16,22 @@ public class Login {
     @BeforeClass
     public void setUp() {
         // Use WebDriverManager to set up ChromeDriver
-        WebDriverManager.firefoxdriver().setup();
-        driver = new FirefoxDriver();
+        WebDriverManager.chromedriver().setup();
+        driver = new ChromeDriver();
         driver.manage().window().maximize();
 
         // Navigate to the login page
-        driver.get("https://eauctions.mahamining.com/login"); // Replace with the actual URL of your login page
+        driver.get("https://eauctions.mahamining.com/login"); 
     }
 
     @Test
     public void testLogin() {
         // Locate the username field and input a username
-        WebElement usernameField = driver.findElement(By.xpath("//input[@placeholder='User Name ']")); // Update locator as needed
+        WebElement usernameField = driver.findElement(By.xpath("//input[@placeholder='User Name ']")); 
         usernameField.sendKeys("akpatil");
 
         // Locate the password field and input a password
-        WebElement passwordField = driver.findElement(By.xpath("//input[@placeholder='Password']")); // Update locator as needed
+        WebElement passwordField = driver.findElement(By.xpath("//input[@placeholder='Password']")); 
         passwordField.sendKeys("Akpatil@123");
 
         // Click the login button

@@ -3,13 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="eauctionFlow.BidderRegistration">
+      <class name="eauctionFlow.CreateEvent">
         <methods>
-          <include name="testBidderRegistration"/>
           <include name="setUp"/>
+          <include name="createEvent"/>
+          <include name="testLogin"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- eauctionFlow.BidderRegistration -->
+      </class> <!-- eauctionFlow.CreateEvent -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -65,7 +65,7 @@ public class ApproverLogin {
 		     Actions a=new Actions(driver);
 		     a.moveToElement(m).perform();
 		  // Click on the Published Event
-		     driver.findElement(By.xpath(""));
+		     driver.findElement(By.xpath("//ul[@id=\"subMenus0\"]/li[2]/a"));
 		     
 	   }
 }

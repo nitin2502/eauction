@@ -7,6 +7,7 @@
         <methods>
           <include name="setUp"/>
           <include name="approveevent"/>
+          <include name="publishevent"/>
         </methods>
       </class> <!-- eauctionFlow.ApproverLogin -->
     </classes>

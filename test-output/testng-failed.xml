@@ -1,32 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
-  <test name="Default test(failed)">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-<<<<<<< HEAD
-<<<<<<< HEAD
       <class name="eauctionFlow.ApproverLogin">
         <methods>
+          <include name="approveevent"/>
           <include name="setUp"/>
-          <include name="publishevent"/>
         </methods>
       </class> <!-- eauctionFlow.ApproverLogin -->
-=======
-      <class name="eauctionFlow.CreateEvent">
-=======
-      <class name="eauctionFlow.BidderRegistration">
->>>>>>> df368066f6b4a39cacbdcc30ca140e67e18bfd19
-        <methods>
-          <include name="testBidderRegistration"/>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-        </methods>
-<<<<<<< HEAD
-      </class> <!-- eauctionFlow.CreateEvent -->
->>>>>>> a618da41f99da080311aadee62e4f50c4eea853d
-=======
-      </class> <!-- eauctionFlow.BidderRegistration -->
->>>>>>> df368066f6b4a39cacbdcc30ca140e67e18bfd19
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

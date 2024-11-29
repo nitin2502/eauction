@@ -1,5 +1,7 @@
 package eauctionFlow;
 
-public class UserRegistration {
+import org.openqa.selenium.WebDriver;
 
+public class UserRegistration {
+ WebDriver d;
 }

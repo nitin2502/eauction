@@ -26,7 +26,6 @@ public class ApproverLogin {
 
 	        // Navigate to the login page
 	        driver.get("https://eauction.shauryatechnosoft.com/login");
-	      
 	    }
 	   @Test(priority=1)
 	    public void LoginApprover() throws Exception  {
@@ -60,9 +59,13 @@ public class ApproverLogin {
 	   }
 	   @Test(priority=3)
 	   public void publishevent() throws Exception {
+		   //Move Mouse To Approval Page
 		   Thread.sleep(5000);
 		   WebElement m=  driver.findElement(By.xpath("//nav[@id=\"sidebar\"]/div[2]/ul/li[1]/a/span[1]"));
 		     Actions a=new Actions(driver);
 		     a.moveToElement(m).perform();
+		  // Click on the Published Event
+		     driver.findElement(By.xpath(""));
+		     
 	   }
 }

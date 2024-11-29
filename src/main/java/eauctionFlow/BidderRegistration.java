@@ -34,6 +34,7 @@ public class BidderRegistration{
 	@Test
 	public void testBidderRegistration() throws InterruptedException {
 		// Fill in PAN Number and click Search
+		Thread.sleep(2000);
 		WebElement panInput = driver.findElement(By.xpath("//input[@maxlength='10']")); 
 		panInput.sendKeys("CJCPG4756Q");
 		WebElement searchButton = driver.findElement(By.xpath("//button[@type='submit'][1]")); 
@@ -61,9 +62,10 @@ public class BidderRegistration{
 		driver.findElement(By.xpath("//input[@formcontrolname='gstNo']")).sendKeys("22ABCDE1234F1Z5"); 
 
 		// Upload Documents
-		WebElement gstUploadInput = driver.findElement(By.xpath("/html/body/app-root/app-web-layout/div[1]/div/div/app-bidder-registration/mat-dialog-content/div/div[4]/div[2]/form/div[3]/table/tbody/tr[1]/td[3]/span/button/span[2]/label/span"));
+		//WebElement gstUploadInput = 
+		driver.findElement(By.xpath("/html/body/app-root/app-web-layout/div[1]/div/div/app-bidder-registration/mat-dialog-content/div/div[4]/div[2]/form/div[3]/table/tbody/tr[1]/td[3]/span/button/span[2]/label/span")).sendKeys("Z:\\SLMCERRor\\730.png\\");
 		Thread.sleep(3000); 
-		gstUploadInput.click();
+		//gstUploadInput.click();
 		Thread.sleep(8000); 
 		
 		// Click Submit

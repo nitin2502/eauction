@@ -72,6 +72,7 @@ public class CreateEvent {
            driver.findElement(By.xpath("/html/body/div[3]/div[2]/div/mat-dialog-container/div/div/app-success-dialog/mat-dialog-content/div/div[2]/div/button/span[2]")).click();
            
        }
+    
      @AfterClass
     public void tearDown() throws InterruptedException {
         // Close the browser

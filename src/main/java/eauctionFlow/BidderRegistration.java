@@ -1,13 +1,16 @@
 package eauctionFlow;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-import io.github.bonigarcia.wdm.WebDriverManager;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class BidderRegistration{
 	private WebDriver driver;
@@ -58,8 +61,11 @@ public class BidderRegistration{
 		driver.findElement(By.xpath("//input[@formcontrolname='gstNo']")).sendKeys("22ABCDE1234F1Z5"); 
 
 		// Upload Documents
+		WebElement gstUploadInput = driver.findElement(By.xpath("/html/body/app-root/app-web-layout/div[1]/div/div/app-bidder-registration/mat-dialog-content/div/div[4]/div[2]/form/div[3]/table/tbody/tr[1]/td[3]/span/button/span[2]/label/span"));
+		Thread.sleep(3000); 
+		gstUploadInput.click();
+		Thread.sleep(8000); 
 		
-
 		// Click Submit
 		driver.findElement(By.xpath("/html/body/app-root/app-web-layout/div[1]/div/div/app-bidder-registration/mat-dialog-content/div/div[4]/div[2]/form/div[4]/button[1]")).submit();
 		Thread.sleep(3000); 

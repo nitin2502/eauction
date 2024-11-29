@@ -3,12 +3,23 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test name="Default test(failed)">
     <classes>
+<<<<<<< HEAD
       <class name="eauctionFlow.ApproverLogin">
         <methods>
           <include name="setUp"/>
           <include name="publishevent"/>
         </methods>
       </class> <!-- eauctionFlow.ApproverLogin -->
+=======
+      <class name="eauctionFlow.CreateEvent">
+        <methods>
+          <include name="setUp"/>
+          <include name="createEvent"/>
+          <include name="testLogin"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- eauctionFlow.CreateEvent -->
+>>>>>>> a618da41f99da080311aadee62e4f50c4eea853d
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

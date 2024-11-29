@@ -5,8 +5,9 @@
   <meta charset='utf-8'>
   <title>TestNG reports</title>
 
-    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
-    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
     <script type="text/javascript" src="testng-reports.js"></script>
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
     <script type='text/javascript'>
@@ -20,11 +21,15 @@
      -->
   </head>
 
-  <body>
-    <div class="top-banner-root">
+  <body>    <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
+<<<<<<< HEAD
       <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+=======
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+>>>>>>> 5c89d963b84fd080d13c67841b116b527e1ab0e3
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -49,7 +54,11 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
+<<<<<<< HEAD
                     <span>C:\Users\adityak\AppData\Local\Temp\testng-eclipse--140106899\testng-customsuite.xml</span>
+=======
+                    <span>C:\Users\niting\AppData\Local\Temp\testng-eclipse--417180753\testng-customsuite.xml</span>
+>>>>>>> 5c89d963b84fd080d13c67841b116b527e1ab0e3
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +100,11 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
+<<<<<<< HEAD
                     <span class="method-stats">3 methods, 2 failed,   1 passed</span>
+=======
+                    <span class="method-stats">3 methods, 1 failed,   2 passed</span>
+>>>>>>> 5c89d963b84fd080d13c67841b116b527e1ab0e3
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -105,11 +118,14 @@
                         <a href="#" panel-name="suite-Default_suite" title="eauctionFlow.ApproverLogin" class="method navigator-link" hash-for-method="approveevent">approveevent</a> <!-- method navigator-link -->
                       </span>
                       <br/>
+<<<<<<< HEAD
                       <span>
                         <img src="failed.png" width="3%"/>
                         <a href="#" panel-name="suite-Default_suite" title="eauctionFlow.ApproverLogin" class="method navigator-link" hash-for-method="publishevent">publishevent</a> <!-- method navigator-link -->
                       </span>
                       <br/>
+=======
+>>>>>>> 5c89d963b84fd080d13c67841b116b527e1ab0e3
                     </div> <!-- method-list-content failed suite-Default_suite -->
                   </li>
                   <li>
@@ -122,6 +138,14 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Default_suite" title="eauctionFlow.ApproverLogin" class="method navigator-link" hash-for-method="LoginApprover">LoginApprover</a> <!-- method navigator-link -->
+<<<<<<< HEAD
+=======
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="eauctionFlow.ApproverLogin" class="method navigator-link" hash-for-method="publishevent">publishevent</a> <!-- method navigator-link -->
+>>>>>>> 5c89d963b84fd080d13c67841b116b527e1ab0e3
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -153,9 +177,15 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
+<<<<<<< HEAD
 Command: [716caf52fcc7148366737b68b41bc1cd, findElement {using=xpath, value=//div[@class=&apos;text-end mt-2&apos;]/button[2]/span[2]}]
 Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.86, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\Users\adityak\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60242}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60242/devtoo..., se:cdpVersion: 131.0.6778.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
 Session ID: 716caf52fcc7148366737b68b41bc1cd
+=======
+Command: [ccdb93981cb9517f9fc171ee08b53834, findElement {using=xpath, value=//div[@class=&apos;text-end mt-2&apos;]/button[2]/span[2]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.86, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\Users\niting\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59343}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59343/devtoo..., se:cdpVersion: 131.0.6778.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ccdb93981cb9517f9fc171ee08b53834
+>>>>>>> 5c89d963b84fd080d13c67841b116b527e1ab0e3
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -172,11 +202,16 @@ Session ID: 716caf52fcc7148366737b68b41bc1cd
 	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+<<<<<<< HEAD
 	at eauctionFlow.ApproverLogin.approveevent(ApproverLogin.java:53)
+=======
+	at eauctionFlow.ApproverLogin.approveevent(ApproverLogin.java:54)
+>>>>>>> 5c89d963b84fd080d13c67841b116b527e1ab0e3
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+<<<<<<< HEAD
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
 	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
 	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
@@ -200,6 +235,49 @@ Session ID: 716caf52fcc7148366737b68b41bc1cd
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
 
 </div> <!-- stack-trace -->
+=======
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-failed -->
+          <div class="suite-Default_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">eauctionFlow.ApproverLogin</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="LoginApprover">
+                  </a> <!-- LoginApprover -->
+                  <span class="method-name">LoginApprover</span>
+>>>>>>> 5c89d963b84fd080d13c67841b116b527e1ab0e3
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -207,6 +285,7 @@ Session ID: 716caf52fcc7148366737b68b41bc1cd
                   <a name="publishevent">
                   </a> <!-- publishevent -->
                   <span class="method-name">publishevent</span>
+<<<<<<< HEAD
                   <div class="stack-trace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
 from unknown error: web view not found
   (Session info: chrome=131.0.6778.86)
@@ -275,6 +354,8 @@ Session ID: 716caf52fcc7148366737b68b41bc1cd
                   <a name="LoginApprover">
                   </a> <!-- LoginApprover -->
                   <span class="method-name">LoginApprover</span>
+=======
+>>>>>>> 5c89d963b84fd080d13c67841b116b527e1ab0e3
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -282,14 +363,18 @@ Session ID: 716caf52fcc7148366737b68b41bc1cd
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
+<<<<<<< HEAD
             <span class="header-content">C:\Users\adityak\AppData\Local\Temp\testng-eclipse--140106899\testng-customsuite.xml</span>
+=======
+            <span class="header-content">C:\Users\niting\AppData\Local\Temp\testng-eclipse--417180753\testng-customsuite.xml</span>
+>>>>>>> 5c89d963b84fd080d13c67841b116b527e1ab0e3
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
-&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
-  &lt;test name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;eauctionFlow.ApproverLogin&quot;/&gt;
     &lt;/classes&gt;
@@ -335,6 +420,7 @@ data.addRows(3);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'approveevent')
 data.setCell(0, 2, 'eauctionFlow.ApproverLogin')
+<<<<<<< HEAD
 data.setCell(0, 3, 5559);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'publishevent')
@@ -344,6 +430,17 @@ data.setCell(2, 0, 2)
 data.setCell(2, 1, 'LoginApprover')
 data.setCell(2, 2, 'eauctionFlow.ApproverLogin')
 data.setCell(2, 3, 929);
+=======
+data.setCell(0, 3, 5599);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'publishevent')
+data.setCell(1, 2, 'eauctionFlow.ApproverLogin')
+data.setCell(1, 3, 5201);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'LoginApprover')
+data.setCell(2, 2, 'eauctionFlow.ApproverLogin')
+data.setCell(2, 3, 362);
+>>>>>>> 5c89d963b84fd080d13c67841b116b527e1ab0e3
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
@@ -381,12 +478,17 @@ return data;
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">LoginApprover</span>
+<<<<<<< HEAD
                 <span class="method-start">4570 ms</span>
+=======
+                <span class="method-start">5266 ms</span>
+>>>>>>> 5c89d963b84fd080d13c67841b116b527e1ab0e3
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">approveevent</span>
+<<<<<<< HEAD
                 <span class="method-start">5506 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
@@ -394,10 +496,18 @@ return data;
                 </img>
                 <span class="method-name">publishevent</span>
                 <span class="method-start">11072 ms</span>
+=======
+                <span class="method-start">5635 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">publishevent</span>
+                <span class="method-start">11238 ms</span>
+>>>>>>> 5c89d963b84fd080d13c67841b116b527e1ab0e3
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
     </div> <!-- wrapper -->
   </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
 </html>

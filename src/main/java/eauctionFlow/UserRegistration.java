@@ -44,7 +44,7 @@ public class UserRegistration {
 	    }
 	    @Test(priority=1)
 	    public void SellerRegister() throws InterruptedException {
-	    	//Click on The Master ///change
+	    	//Click on The Master 
 	    	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 	     WebElement m=  driver.findElement(By.xpath("//nav[@id='sidebar']/div[2]/ul/li[2]/a/span[1]"));
 	     Actions a=new Actions(driver);
